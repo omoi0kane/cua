@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-10-20T09:56:51.193566+09:00",
+  "base": "dfe1323553de58637b5783a60d0595f58049813e",
+  "red": "332d5b66efcd0fdc622062f6370baab9d977e3d0",
+  "fix": "f1273c9ad3358181143a3e057cf126afdf7f0212",
+  "isolatedReproducer": {
+    "exit": 0,
+    "redExit": 101,
+    "redPassed": 2,
+    "redFailed": 3,
+    "greenExit": 0,
+    "greenPassed": 5,
+    "greenFailed": 0
+  },
+  "macPlatformWindowsUnitSuite": {
+    "exit": 0,
+    "passed": 89,
+    "failed": 0
+  },
+  "macCoreSnapshotStoreSuite": {
+    "exit": 0,
+    "passed": 38,
+    "failed": 0
+  },
+  "windowsGnuTargetLibAndTestsCompile": {
+    "exit": 0
+  },
+  "windowsNativeCoordinateTests": {
+    "exit": 0,
+    "passed": 5,
+    "failed": 0,
+    "filtered": 284,
+    "inputEvents": 0
+  },
+  "windowsNativeTestExeSha256": "6e817abd6c5549a447ca457c7d1a85a46b950722b84376ab8995e654b708b1da",
+  "v028BackportWindowsCompile": {
+    "exit": 0,
+    "base": "1b50c02e2d34734f64d2d22f54eb76cc97b4a663"
+  },
+  "notVerified": [
+    "actual SendInput wheel routing into nested scrollers",
+    "non-100-percent desktop DPI",
+    "live GUI integration",
+    "post-fix model/business extraction",
+    "MSVC toolchain build"
+  ],
+  "scope": "The Windows native tests execute the production mapping helper, not OS input delivery. Windows cargo check compiles the actual ScrollTool call site. The red commit first extracts the old cast without changing behavior.",
+  "runtimeInstall": "Not installed as a running driver; existing official binary and Local Worker unchanged."
+}
